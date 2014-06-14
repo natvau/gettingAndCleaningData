@@ -1,4 +1,5 @@
 # 1. Merges the training and the test sets to create one data set.
+rm(list=ls())
 train <- read.table("UCI HAR Dataset/train/X_train.txt", header=FALSE, sep = "")
 train <- cbind(train, read.table("UCI HAR Dataset/train/subject_train.txt"), read.table("UCI HAR Dataset/train/y_train.txt"))
 test <- read.table("UCI HAR Dataset/test/X_test.txt", header=FALSE, sep = "")
